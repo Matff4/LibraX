@@ -2,12 +2,10 @@ package me.matff.librax;
 
 import atlantafx.base.theme.Dracula;
 import javafx.application.Application;
-import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
-import me.matff.librax.util.DatabaseUtil;
 
 import java.io.IOException;
 import java.util.Objects;
@@ -29,11 +27,6 @@ public class LibraX extends Application {
         stage.setScene(scene);
 
         stage.show();
-
-        Platform.runLater(() -> {
-            DatabaseUtil databaseUtil = new DatabaseUtil();
-        });
-
     }
 
     public static void main(String[] args) {
